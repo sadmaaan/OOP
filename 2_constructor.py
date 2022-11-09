@@ -26,6 +26,6 @@ print(item1.pay_rate) # it first search in item1 instance if didn't find then se
 print(item2.pay_rate)
 
 # checking which variables belongs to which objects
-print(Item.__dict__)
+print(Item.__dict__) # all attribute belongs to class object
 print(item1.__dict__)
 print(item2.__dict__)
