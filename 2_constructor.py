@@ -5,7 +5,7 @@ class Item:
         assert price >= 0, f"Price {price} is less than 0"
         assert quantity >= 0, f"Quantity {quantity} is less than 0"
 
-        # constructor variable declaration
+        # assign to self object
         self.name = name
         self.price = price
         self.quantity = quantity
