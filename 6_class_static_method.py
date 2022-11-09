@@ -20,7 +20,7 @@ class Item:
     def __repr__(self):
         return f'Item("{self.name}", {self.price}, {self.quantity})'
     
-    @classmethod
+    @classmethod # instance independent. can be used to create instance from structured data -> CSV, JSON etc...
     def instantiate_from_csv(cls) -> None:
         with open('items.csv', 'r') as f:
             reader = csv.DictReader(f)
@@ -34,7 +34,7 @@ class Item:
                 quantity = int(item.get('quantity')),
             )
             
-    @staticmethod
+    @staticmethod # instance and class independent
     def is_integer(num) -> bool:
         # We will count out the floats that are point zero
         # For i.e: 5.0, 10.0
