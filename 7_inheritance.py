@@ -41,5 +41,6 @@ if __name__ == '__main__':
     phone1.apply_discount() # parent discount -> 20%
     print(phone1.price)
 
+    # print -> created object belongs to which class
     print(Item.all)
     print(Phone.all)
