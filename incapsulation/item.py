@@ -22,7 +22,10 @@ class Item:
 
     @name.setter # setting value in private variable
     def name(self, new_value: str):
-        self.__name = new_value
+        if len(new_value) > 10:
+            raise Exception("Name length should be lower!!!")
+        else:
+            self.__name = new_value
     
     # override __str()__ and __repr()__ to make our own object return type
     def __repr__(self):
